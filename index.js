@@ -1,15 +1,15 @@
 const log = require('loglevel')
-const ethUtil = require('ethereumjs-util')
+const ethUtil = require('newchainjs-util')
 const BN = ethUtil.BN
 const bip39 = require('bip39')
 const EventEmitter = require('events').EventEmitter
 const ObservableStore = require('obs-store')
 const encryptor = require('browser-passworder')
-const sigUtil = require('eth-sig-util')
+const sigUtil = require('newchain-sig-util')
 const normalizeAddress = sigUtil.normalize
 // Keyrings:
-const SimpleKeyring = require('eth-simple-keyring')
-const HdKeyring = require('eth-hd-keyring')
+const SimpleKeyring = require('newchain-simple-keyring')
+const HdKeyring = require('newchain-hd-keyring')
 const keyringTypes = [
   SimpleKeyring,
   HdKeyring,
